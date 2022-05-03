@@ -12,6 +12,9 @@ inputs:
   pipeline-id:
     description: "The id of the pipeline to deploy review app for"
     required: true
+  team:
+    description: "Unique name of team to create the app within"
+    required: true
   region:
     description: "Region to deploy. eu or us"
     default: "eu"
@@ -75,9 +78,10 @@ runs:
       if: ${{ github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened') && inputs.use-app-json == 'false' }}
       shell: bash
       run: |
-        curl -X POST https://api.heroku.com/apps \
+        curl -X POST https://api.heroku.com/teams/apps \
         -d '{
         "name": "'"$APP_NAME"'",
+        "team": "${{ inputs.team }}",
         "region": "${{ inputs.region }}",
         "stack": "${{ inputs.stack }}"
         }' \
