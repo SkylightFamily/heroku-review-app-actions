@@ -99,11 +99,22 @@ runs:
         "source_blob": {"url": "'"$SOURCE_GET_URL"'", "version": "'"${{ github.event.pull_request.head.sha }}"'"},
         "overrides": {
           "env": {
-            "AWS_KEY": "'"$AWS_KEY"'",
-            "AWS_SECRET": "'"$AWS_SECRET"'",
-            "S3_REGION": "'"$S3_REGION"'",
-            "SENTRY_PROJECT": "'"$SENTRY_PROJECT"'",
-            "SENTRY_ORG": "'"$SENTRY_ORG"'"
+            "AWS_KEY":                    "'"$AWS_KEY"'",
+            "AWS_SECRET":                 "'"$AWS_SECRET"'",
+            "S3_REGION":                  "'"$S3_REGION"'",
+            "SENTRY_PROJECT":             "'"$SENTRY_PROJECT"'",
+            "SENTRY_ORG":                 "'"$SENTRY_ORG"'",
+            "DYNAMO_METRICS_TABLE":       "'"$DYNAMO_METRICS_TABLE"'",
+            "MESSAGE_ACTION_QUEUE_TABLE": "'"$MESSAGE_ACTION_QUEUE_TABLE"'",
+            "ASSET_HASH_TABLE":           "'"$ASSET_HASH_TABLE"'",
+            "FRAME_META_TABLE":           "'"$FRAME_META_TABLE"'",
+            "SQS_URL":                    "'"$SQS_URL"'",
+            "CALENDAR_SQS_URL":           "'"$CALENDAR_SQS_URL"'",
+            "PO_BOX_BUCKET":              "'"$PO_BOX_BUCKET"'",
+            "DARKROOM_BUCKET":            "'"$DARKROOM_BUCKET"'",
+            "SIDEKIQ_SERVER_KEY":         "'"$SIDEKIQ_SERVER_KEY"'",
+            "PUSHY_BASE_URL":             "'"$PUSHY_BASE_URL"'",
+            "MONTH_IN_REVIEW_ARN":        "'"$MONTH_IN_REVIEW_ARN"'"
           }
         },
         "app": {
