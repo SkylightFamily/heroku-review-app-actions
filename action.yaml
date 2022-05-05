@@ -98,7 +98,9 @@ runs:
         -d '{
         "source_blob": {"url": "'"$SOURCE_GET_URL"'", "version": "'"${{ github.event.pull_request.head.sha }}"'"},
         "overrides": {
-          "env": $REVIEW_APP_ENV_VARIABLES
+          "env": {
+            "hello": "world"
+          }
         },
         "app": {
           "name": "'"$APP_NAME"'",
