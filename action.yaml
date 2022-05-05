@@ -101,7 +101,8 @@ runs:
           "env": {
             "AWS_KEY": "'"$AWS_KEY"'",
             "AWS_SECRET": "'"$AWS_SECRET"'",
-            "S3_REGION": "'"$S3_REGION"'"
+            "S3_REGION": "'"$S3_REGION"'",
+            "SENTRY_PROJECT": "'"$SENTRY_PROJECT"'"
           }
         },
         "app": {
