@@ -102,7 +102,8 @@ runs:
             "AWS_KEY": "'"$AWS_KEY"'",
             "AWS_SECRET": "'"$AWS_SECRET"'",
             "S3_REGION": "'"$S3_REGION"'",
-            "SENTRY_PROJECT": "'"$SENTRY_PROJECT"'"
+            "SENTRY_PROJECT": "'"$SENTRY_PROJECT"'",
+            "SENTRY_ORG": "'"$SENTRY_ORG"'"
           }
         },
         "app": {
