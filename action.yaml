@@ -104,6 +104,8 @@ runs:
             "S3_REGION":                  "'"$S3_REGION"'",
             "SENTRY_PROJECT":             "'"$SENTRY_PROJECT"'",
             "SENTRY_ORG":                 "'"$SENTRY_ORG"'",
+            "SENTRY_DSN":                 "'"$SENTRY_DSN"'",
+            "SENTRY_AUTH_TOKEN":          "'"$SENTRY_AUTH_TOKEN"'",
             "DYNAMO_METRICS_TABLE":       "'"$DYNAMO_METRICS_TABLE"'",
             "MESSAGE_ACTION_QUEUE_TABLE": "'"$MESSAGE_ACTION_QUEUE_TABLE"'",
             "ASSET_HASH_TABLE":           "'"$ASSET_HASH_TABLE"'",
